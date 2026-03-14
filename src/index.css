@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-candy-pink: #FF4D94;
+  --color-candy-cyan: #00D4FF;
+  --color-candy-yellow: #FFD700;
+  --color-candy-orange: #FF8C00;
+  --color-candy-green: #39FF14;
+  --color-candy-purple: #9D50BB;
+  --color-dopa-pink: #FF4D94;
+  --color-dopa-blue: #00D4FF;
+  --color-dopa-yellow: #FFD700;
+  --color-dopa-orange: #FF8C00;
+  --color-dopa-green: #39FF14;
+  --color-dopa-purple: #9D50BB;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+    background-image: 
+      radial-gradient(circle at 2px 2px, rgba(0,0,0,0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
+.candy-gloss {
+  background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 100%);
+}
+
+.candy-shadow {
+  box-shadow: 0 8px 0 0 rgba(0,0,0,1);
+}
+
+.candy-shadow-sm {
+  box-shadow: 0 4px 0 0 rgba(0,0,0,1);
+}
+
+.candy-shadow-active {
+  box-shadow: 0 2px 0 0 rgba(0,0,0,1);
+  transform: translateY(2px);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
